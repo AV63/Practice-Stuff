@@ -1,0 +1,15 @@
+n = int(input("enter a number to check if its an armstrong number "))
+
+temp = n
+
+length = len(str(n))
+
+result = 0
+while temp != 0:
+    digit = temp%10
+    result = result + digit**length
+    temp = temp//10
+if result == n:
+    print("Armstrong number! ")
+else:
+    print("not an armstrong number ")
